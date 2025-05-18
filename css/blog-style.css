@@ -67,7 +67,7 @@ a{
 body{
   font-family: 'Noto Sans TC','Noto Sans',sans-serif;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0%;
   background: rgba(251, 251, 251, 1);
 
@@ -89,16 +89,40 @@ img{
   font-size: 28px;
   font-weight: 700;
 }
-.page1{
+.pg1{
   width: 100%;
 }
-.page1 .personal-image{
+.pg1 .personal-image{
   display: block;
   width: 100%;
   max-width: 600px;     /* 保證最大寬度不超過 375px */
   margin: 0 auto;       /* 置中 */
 }
-.page1 .personal-image img {
+.pg1 .personal-image img {
   width: 100%;          /* 讓圖片響應式寬度縮放 */
   height: auto;         /* 等比例縮放 */
+}
+.pg1-context{
+  display: flex;
+  max-width: 600px; 
+  width: 100%; 
+  height: 30%;
+  margin: 0 auto; 
+  align-items: center;
+}
+.pg1-context img{
+  width: 100%;
+  z-index: 1;
+}
+.pg1-textbox{
+  width: 100%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,0);
+  z-index: 2;
+}
+.pg1-textbox h1{
+  font-size: 52px;
+  font-weight: 900;
+  color: rgba(0, 39, 213, 1);
 }
