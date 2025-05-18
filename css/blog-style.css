@@ -78,6 +78,7 @@ img{
 .container{
   max-width: 100vw;
   height: auto;
+  margin: 0 auto;
 }
 .header{
   display: flex;
@@ -90,39 +91,42 @@ img{
   font-weight: 700;
 }
 .pg1{
-  width: 100%;
+  /* max-width: 600px;  */
+  width: 100%; 
 }
 .pg1 .personal-image{
   display: block;
   width: 100%;
-  max-width: 600px;     /* 保證最大寬度不超過 375px */
-  margin: 0 auto;       /* 置中 */
+  /* max-width: 600px;     保證最大寬度不超過 375px */
+      /* 置中 */
 }
 .pg1 .personal-image img {
   width: 100%;          /* 讓圖片響應式寬度縮放 */
   height: auto;         /* 等比例縮放 */
 }
 .pg1-context{
-  display: flex;
-  max-width: 600px; 
-  width: 100%; 
-  height: 30%;
-  margin: 0 auto; 
-  align-items: center;
+  position: relative;
 }
 .pg1-context img{
   width: 100%;
-  z-index: 1;
+  height: 30%;
+  z-index: 0;
 }
 .pg1-textbox{
-  width: 100%;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,0);
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 24px;
   z-index: 2;
 }
 .pg1-textbox h1{
   font-size: 52px;
   font-weight: 900;
+  color: rgba(0, 39, 213, 1);
+  margin-bottom: 10px;
+}
+.ft-format1-bl{
+  font-size: 28px;
+  font-weight: 700;
   color: rgba(0, 39, 213, 1);
 }
