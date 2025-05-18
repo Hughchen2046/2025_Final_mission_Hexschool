@@ -102,17 +102,3 @@ img{
   width: 100%;          /* 讓圖片響應式寬度縮放 */
   height: auto;         /* 等比例縮放 */
 }
-.container{
-    width: calc(100vw-32px);
-    height: 300px;
-    margin: 0 auto;
-    background: grey;    
-}
-.box{
-    width: 50%;
-    height:100%;
-    background: blue;
-    color: black;
-    -webkit-transform:translate(50%,60%);
-    text-align: center;
-}
