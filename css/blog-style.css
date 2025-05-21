@@ -108,19 +108,34 @@ img{
   height: auto;         /* 等比例縮放 */
 }
 .pg1-textbox{
-  background-image: url("/2025Final_mission/2025_Final_mission_Hexschool/images/desktop/index/Hero-Section2.png");
-  top:0;
-  left: 0;
+  background-image: url("/images/desktop/index/Hero-Section2.png");
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .pg1-textbox h1{
   font-size: 52px;
   font-weight: 900;
   color: rgba(0, 39, 213, 1);
-  margin-bottom: 10px;
 }
 .ft-format1-bl{
   font-size: 28px;
   font-weight: 700;
   color: rgba(0, 39, 213, 1);
+}
+@media(min-width: 601px){
+  .pg1{
+    display: flex;
+  }
+  .pg1 .personal-image{
+    width: 50vw;
+  }
+  .pg1-textbox{
+    width: 50vw;
+    justify-content: center;
+  }
+  .pg1-textbox h1{
+    font-size: 120px;
+  }
 }
