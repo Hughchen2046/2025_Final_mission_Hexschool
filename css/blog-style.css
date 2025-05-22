@@ -241,15 +241,13 @@ img{
   border: none;
   outline: none;
   color: rgba(75, 75, 75, 1);
+  background-color: rgba(251, 251, 251, 1);
   font-size: 16px;
 }
 
 .scbar-text img {
   width: 18px;
   height: 18px;
-}
-.scbar-text .text{
-  background-color: rgba(251, 251, 251, 1);
 }
 .pg3-content{
   padding: 40px 12px;
