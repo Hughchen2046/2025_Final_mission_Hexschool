@@ -214,3 +214,32 @@ img{
     align-items: center;
   }
 }
+.pg3{
+  padding: 64px 0;
+  border: 1px solid rgba(108, 117, 125, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scbar-text {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(75, 75, 75, 1);
+  border-radius: 40px;
+  padding: 16px;
+  gap:10px;
+  width: 351px;
+}
+
+.scbar-text input {
+  flex: 1;
+  border: none;
+  outline: none;
+  color: rgba(75, 75, 75, 1);
+  font-size: 16px;
+}
+
+.scbar-text img {
+  width: 18px;
+  height: 18px;
+}
