@@ -108,7 +108,7 @@ img{
   height: auto;         /* 等比例縮放 */
 }
 .pg1-textbox{
-  background-image: url('.\images\desktop\index\Hero-Section2.png');
+  background-image: url("../images/desktop/index/Hero-Section2.png");
   padding: 24px;
   display: flex;
   flex-direction: column;
