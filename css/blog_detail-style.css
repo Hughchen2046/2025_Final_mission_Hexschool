@@ -154,6 +154,3 @@ img{
     width: calc(50% -12px);
   }
 }
-ol .olnum{
-  list-style-type: decimal;
-}
