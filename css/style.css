@@ -138,7 +138,9 @@ img{
     width: 50vw;
     justify-content: center;
   }
-  .pg1-textbox h1{
+}
+@media(min-width: 1240px){
+    .pg1-textbox h1{
     font-size: 120px;
   }
 }
