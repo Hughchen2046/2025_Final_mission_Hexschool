@@ -196,6 +196,9 @@ img{
     width: 80%;
     transform: translate(10% ,-10%);
   }
+  .ftsz-48{
+    font-size: 64px;
+  }
 }
 @media(min-width: 1000px){
   .pg1-notebox{
@@ -203,11 +206,11 @@ img{
     transform: translate(30% ,-35%);
   }
 }
-.pg2{
+.pg2, .pg3{
   width: 100%;
   border-bottom: 1px solid rgba(108, 117, 125, 1)
 }
-.pg2-container{
+.pg2-container, .pg3-container{
   max-width: 1296px;
   padding: 64px 12px;
   gap: 32px;
@@ -256,5 +259,78 @@ img{
   .contact-box{
     flex-direction: row;
     justify-content: end;
+  }
+}
+.bl{
+  color: rgba(0, 39, 213, 1);
+}
+.btn{
+  display: inline-block;
+  width: 96px;
+  border-radius: 40px;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid #000000;
+  text-align: center;
+  vertical-align: middle;
+}
+.btn-bl{
+  background-color:  rgba(0, 39, 213, 1);
+  color: #fff;
+  border: 0 ;
+}
+.hidden2{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.pg3-container{
+  gap:24px
+}
+.card-format2{
+  gap: 16px;
+}
+.hot-tag{
+  gap: 8px;
+}
+.pg3-cardbox, .pg3-content{
+  width: 100%;
+  gap:24px;
+}
+.disp{
+  display: none;
+}
+.arrow-box{
+  justify-content: end;
+  gap: 24px;
+}
+.arrow-r{
+  width: 44px;
+  height: 44px;
+  font-size: 25px;
+  border-radius: 40px;
+}
+
+@media(min-width:1296px){
+  .align-use{
+    max-width:1296px;
+    margin: 0 68px;
+  }
+  .disp{
+    display:block;
+  }
+  .pg3-container{
+    max-width: 1532px;
+  }
+  .pg3-cardlist{
+    flex:1;
+  }
+  .pg3-cardbox{
+    align-items: center;
+  }
+  .arrow-box{
+    display:none
   }
 }
