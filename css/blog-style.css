@@ -281,6 +281,22 @@ img{
   gap:16px;
   padding: 8px 20px;
 }
+.arrow-link, .number-link{
+  display: inline-block;
+  width: 16px;
+  text-align: center;
+  &:hover{
+    transition: all 0.3s ease-in;
+    text-decoration: underline;
+    background-color: rgba(118, 160, 197, 0.5);
+  }
+  &:active{
+    color: darkorange;
+    transform: scale(0.8);
+    transition:none;
+    background-color: rgba(118, 160, 197, 0.5);    
+  }
+}
 .contact_info{
   display: none;
 }
