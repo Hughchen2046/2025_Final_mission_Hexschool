@@ -206,11 +206,11 @@ img{
     transform: translate(30% ,-35%);
   }
 }
-.pg2, .pg3{
+.pg2, .pg3, .pg4{
   width: 100%;
   border-bottom: 1px solid rgba(108, 117, 125, 1)
 }
-.pg2-container, .pg3-container{
+.pg2-container, .pg3-container, .pg4-container{
   max-width: 1296px;
   padding: 64px 12px;
   gap: 32px;
