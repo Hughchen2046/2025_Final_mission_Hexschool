@@ -161,6 +161,7 @@ img{
   border: 0 ;
 }
 .pg2{
+  max-width:1296px;
   border: 1px solid rgba(108, 117, 125, 1)
 }
 .pg2, .pg2-image{
@@ -218,6 +219,7 @@ img{
   }
 }
 .pg3{
+  max-width:1296px;
   padding: 64px 0;
   border: 1px solid rgba(108, 117, 125, 1);
   display: flex;
@@ -284,6 +286,7 @@ img{
 }
 @media (min-width: 755px){
   .footer{
+  max-width:1296px;
   width: 99%;
   }
 
