@@ -100,3 +100,45 @@ img{
   /* max-width: 600px;  */
   width: 100%; 
 }
+.pg1 .personal-image{
+  display: block;
+  width: 100%;
+  /* max-width: 600px;     保證最大寬度不超過 375px */
+      /* 置中 */
+}
+.pg1 .personal-image img {
+  width: 100%;          /* 讓圖片響應式寬度縮放 */
+  height: auto;         /* 等比例縮放 */
+}
+.pg1-textbox{
+  background-image: url("../images/desktop/index/Hero-Section2.png");
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pg1-textbox h1{
+  font-size: 52px;
+  font-weight: 900;
+  color: rgba(0, 39, 213, 1);
+}
+.ft-format1-bl{
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(0, 39, 213, 1);
+}
+@media(min-width: 755px){
+  .pg1{
+    display: flex;
+  }
+  .pg1 .personal-image{
+    width: 50vw;
+  }
+  .pg1-textbox{
+    width: 50vw;
+    justify-content: center;
+  }
+  .pg1-textbox h1{
+    font-size: 120px;
+  }
+}
