@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ul {
 	list-style: none;
 }
 blockquote, q {
@@ -109,12 +109,15 @@ img{
   border: 1px solid #000000;
   text-align: center;
 }
+.btn_1{
+  padding: 8px 16px;  
+}
 .btn-bl{
   background-color:  rgba(0, 39, 213, 1);
   color: #fff;
   border: 0 ;
 }
-.pg1, .pg1-img, .pg1-content, .pg1-img img{
+.pg1, .pg1-img, .pg1-content, .pg1-img img, .btn_box{
     width:100%;
     /* outline: 1px solid orange; */
 }
@@ -153,4 +156,83 @@ img{
   .pg1-img, .pg1-content{
     width: calc(50% -12px);
   }
+}
+ol{
+  list-style:decimal;
+}
+ol li{
+  margin-left: 1.3em;
+}
+h4{
+  font-size: 20px;
+  font-weight: 700;
+}
+.ol-circle{
+  list-style:disc;
+}
+.fl-wr{
+  display: flex;
+  flex-wrap: wrap;
+}
+.pg2{
+  padding: 64px 12px;
+  gap: 48px;
+}
+.intro{
+  gap: 24px;
+}
+.imgformat, .note-box, .pg2-cardformat, .pg2-textbox, .footer{
+  width: 100%;
+}
+.pg2-cardformat{
+  gap: 24px;
+}
+.pg2-textbox{
+  gap: 12px;
+}
+.note-box{
+  padding: 24px;
+  border-radius: 24px;
+  background: rgba(237, 237, 237, 1);
+  font-weight: 700;
+}
+.flexsb{
+  display: flex;
+  justify-content: space-between;
+}
+.ftsz-32{
+  font-size: 32px;
+}
+.btn_box{
+  display: flex;
+  justify-content: space-between;
+}
+.btn_box a{
+  width: 108px;
+  gap: 8px;
+}
+
+.footer{
+  max-width: 1296px;
+}
+.contact_info{
+  padding:80px 0;
+}
+.copy_rights{
+  text-align: center;
+  padding: 24px 0;
+}
+@media(min-width:636px){
+  .pg2{
+    max-width: 636px;
+  }
+}
+@media(max-width:636px){
+  .contact_info{
+   display: none;
+  }
+}
+.border-use{
+  width: 100%;
+  border-top: 1px solid rgba(108, 117, 125, 1);
 }
