@@ -153,7 +153,7 @@ img{
   background: #fff;
   border-radius: 30px;
 }
-.flex, .flexsb, .flexco{
+.flex, .flexsb, .flexco, .flexsc, .flcc, .icon-box{
   display: flex;
 }
 .flexsb{
@@ -163,11 +163,14 @@ img{
 .flexco{
   flex-direction: column;
 }
+.flexsc{
+  justify-content: start;
+  align-items: center;
+}
 .icon, .pg2-container{
   width: 100%;
 }
 .flcc, .icon-box{
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -179,13 +182,14 @@ img{
   font-size: 24px;
   font-weight: 500;
 }
+.fw7, .ftsz-28, .ftsz-48, .btn, .btn-w{
+  font-weight: 700; 
+}
 .ftsz-28{
-  font-size: 28px;
-  font-weight: 700;  
+  font-size: 28px; 
 }
 .ftsz-48{
   font-size: 48px;
-  font-weight: 700;  
 }
 .copy_rights{
   padding: 24px 0px;
@@ -264,13 +268,12 @@ img{
 .bl{
   color: rgba(0, 39, 213, 1);
 }
-.btn{
+.btn, .btn-w, .btn-w1{
   display: inline-block;
   width: 96px;
   border-radius: 40px;
   padding: 6px 12px;
   font-size: 16px;
-  font-weight: 700;
   border: 1px solid #000000;
   text-align: center;
   vertical-align: middle;
@@ -333,4 +336,46 @@ img{
   .arrow-box{
     display:none
   }
+}
+.pg4-textbox{
+  gap: 12px;
+}
+.pg4-content{
+  margin-bottom: 16px;
+}
+.pg4-cardbox1{
+  gap:16px;
+}
+.card-text2, .card-text2-grayb{
+  padding: 40px 24px;
+  gap: 24px;
+}
+.card-text2-grayb{
+  background: rgba(245, 245, 245, 1);
+}
+.btn-w{
+  max-width: 128px;
+  width: 100%;
+  border: 1px solid rgba(0, 39, 213, 1);
+  background-color: white;
+}
+.sq80{
+  width: 80px;
+  height: 80px;
+}
+.sq16{
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.marb8{
+  margin-bottom: 8px;
+}
+.bder-b{
+  border-bottom: 1px solid rgba(75, 75, 75, 1);
+}
+.btn-w1{
+  color: rgba(75, 75, 75, 1);
+  max-width: 161px;
+  width: 100%;
 }
