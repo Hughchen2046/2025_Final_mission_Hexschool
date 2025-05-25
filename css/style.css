@@ -317,6 +317,9 @@ img{
   font-size: 25px;
   border-radius: 40px;
 }
+.left-arrow{
+  background-color: rgb(112, 152, 187);
+}
 
 @media(min-width:1296px){
   .align-use{
