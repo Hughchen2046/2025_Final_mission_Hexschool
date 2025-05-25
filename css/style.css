@@ -174,7 +174,7 @@ img{
   align-items: center;
   justify-content: center;
 }
-.icon-box{
+.icon-box, .icon-box1{
   width: 44px;
   height: 44px;
 }
@@ -210,7 +210,7 @@ img{
     transform: translate(30% ,-35%);
   }
 }
-.pg2, .pg3, .pg4, .pg5{
+.pg2, .pg3, .pg4, .pg5, .pg6{
   width: 100%;
   border-bottom: 1px solid rgba(108, 117, 125, 1)
 }
@@ -452,6 +452,26 @@ img{
   font-size: 20px;
   color: rgba(75, 75, 75, 1);
 }
+.pg6-container{
+  padding: 64px 12px;
+  gap: 24px;
+}
+.icon-box1{
+  display: inline-block;
+  vertical-align: middle;
+}
+.pg6-ctformat{
+  gap: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #000000;
+}
+.udline{
+  text-decoration: underline;
+}
+.pg6-ctformat .udline .udlinenone{
+  text-decoration: none;
+}
+
 @media(min-width: 800px){
   .pg5{
     display: flex;
@@ -463,4 +483,15 @@ img{
   .pg5-inputbox{
     justify-content: center;
   }
+  .pg6-container{
+    max-width: 1296px;
+    padding: 80px 0;
+    margin: 0 auto;
+  }
+  .pg6-ctformat{
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 28px;
+  }
 }
+
