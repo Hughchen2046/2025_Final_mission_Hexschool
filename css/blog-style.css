@@ -96,6 +96,9 @@ img{
   font-size: 28px;
   font-weight: 700;
 }
+.head-link:hover{
+  color: rgb(66, 1, 1);
+}
 .pg1{
   /* max-width: 600px;  */
   width: 100%; 
@@ -158,10 +161,22 @@ img{
   border: 1px solid #000000;
   text-align: center;
 }
+.btn:hover{
+  color: rgb(42, 42, 247);
+  border: 1px solid rgb(42, 42, 247);
+}
 .btn-bl{
   background-color:  rgba(0, 39, 213, 1);
   color: #fff;
   border: 0 ;
+}
+
+.btn-bl:hover{
+  background-color: rgb(147, 165, 243);
+  color: rgb(42, 42, 247);
+}
+.tag:hover{
+  background-color: rgb(147, 165, 243);
 }
 .pg2{
   max-width:1296px;
@@ -247,6 +262,10 @@ img{
   outline: none;
   color: rgba(75, 75, 75, 1);
   font-size: 16px;
+}
+.scbar-text input:focus{
+  color: rgb(2, 1, 63);
+  font-weight: bold;
 }
 
 .scbar-text img {
