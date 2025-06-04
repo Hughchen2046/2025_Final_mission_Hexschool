@@ -279,6 +279,10 @@ img{
   border: 1px solid #000000;
   text-align: center;
   vertical-align: middle;
+  transition: all ease-in-out 0.3s;
+}
+.btn:hover{
+  background-color: rgb(209, 209, 209);
 }
 .btn-bl{
   background-color:  rgba(0, 39, 213, 1);
@@ -291,22 +295,12 @@ img{
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
-.pg3-container{
-  gap:24px
-}
-.card-format2{
-  gap: 16px;
-}
+
 .hot-tag{
+  margin: 16px 0;
   gap: 8px;
 }
-.pg3-cardbox, .pg3-content{
-  width: 100%;
-  gap:24px;
-}
-.disp{
-  display: none;
-}
+
 .arrow-box{
   justify-content: end;
   gap: 24px;
@@ -317,29 +311,13 @@ img{
   font-size: 25px;
   border-radius: 40px;
 }
-.left-arrow{
-  background-color: rgb(112, 152, 187);
+.align-use{
+  margin-bottom: 24px;
 }
-
 @media(min-width:1296px){
   .align-use{
     max-width:1296px;
-    margin: 0 68px;
-  }
-  .disp{
-    display:block;
-  }
-  .pg3-container{
-    max-width: 1532px;
-  }
-  .pg3-cardlist{
-    flex:1;
-  }
-  .pg3-cardbox{
-    align-items: center;
-  }
-  .arrow-box{
-    display:none
+    margin-bottom: 24px;
   }
 }
 .pg4-textbox{
@@ -497,4 +475,56 @@ img{
     font-size: 28px;
   }
 }
-
+.swiper{
+  width: 100%;
+  height: 552px;
+  position: relative;
+}
+.swiper-wrapper{
+  position: relative;
+}
+.swiper-slide{
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  height: 552px;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.swiper-slide a{
+  margin: 16px 0;
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev{
+  color: rgb(36, 12, 255);
+  top: var(--swiper-navigation-top-offset, 93%);
+  --swiper-navigation-size: 30px;
+}
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after{
+  display: none;
+}
+.swiper .swiper-button-next i,
+.swiper .swiper-button-prev i{
+  font-size: 28px;
+}
+.swiper .swiper-button-prev{
+    right: var(--swiper-navigation-sides-offset,60px);
+    left: auto
+}
+@media (min-width:800px) {
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev{
+    top: var(--swiper-navigation-top-offset, 47%);
+    --swiper-navigation-size: 30px;
+  }
+  .swiper .swiper-button-prev{
+      right: var(--swiper-navigation-sides-offset,97%);
+      left: auto
+  }  
+}
