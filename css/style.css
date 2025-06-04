@@ -217,7 +217,6 @@ img{
 .pg2-container, .pg3-container, .pg4-container{
   max-width: 1296px;
   padding: 64px 12px;
-  gap: 32px;
   margin: 0 auto;
 }
 .vector{
@@ -291,57 +290,10 @@ img{
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
-.pg3-container{
-  gap:24px
-}
-.card-format2{
-  gap: 16px;
-}
-.hot-tag{
-  gap: 8px;
-}
-.pg3-cardbox, .pg3-content{
-  width: 100%;
-  gap:24px;
-}
-.disp{
-  display: none;
-}
-.arrow-box{
-  justify-content: end;
-  gap: 24px;
-}
-.arrow-r{
-  width: 44px;
-  height: 44px;
-  font-size: 25px;
-  border-radius: 40px;
-}
-.left-arrow{
-  background-color: rgb(112, 152, 187);
-}
 
-@media(min-width:1296px){
-  .align-use{
-    max-width:1296px;
-    margin: 0 68px;
-  }
-  .disp{
-    display:block;
-  }
-  .pg3-container{
-    max-width: 1532px;
-  }
-  .pg3-cardlist{
-    flex:1;
-  }
-  .pg3-cardbox{
-    align-items: center;
-  }
-  .arrow-box{
-    display:none
-  }
-}
+
+
+
 .pg4-textbox{
   gap: 12px;
 }
@@ -498,3 +450,97 @@ img{
   }
 }
 
+.swiper-wrapper-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.swiper {
+  width: 85%;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none; 
+}
+.swiper-button-next i,
+.swiper-button-prev i {
+  font-size: 45px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 1%;
+  transform: translateY(1%);
+  z-index: 10;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #333;
+}
+li.swiper-slide {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+}
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 16px;
+}
+.card-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+.card-tags {
+  color: #4169e1;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.card-desc {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 12px;
+}
+.read-more-btn {
+  padding: 8px 16px;
+  border: 1px solid #333;
+  border-radius: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+.read-more-btn:hover {
+  background-color: #f0f0f0;
+}
+@media (max-width: 750px) {
+  .swiper-wrapper-area {
+    display: block;
+    height: 450px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    top: 150%;
+  }
+  .swiper-button-prev {
+    left: auto;
+    right: 15%;
+  }
+}
