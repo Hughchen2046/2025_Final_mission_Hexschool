@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Document</title>
+      <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TYFHV7T9LM"></script>
     <script>
@@ -106,10 +110,9 @@
       <div class="pg3">
         <div class="pg3-container flexco">
           <div class="align-use"><h3 class="ftsz-48">部落格精選</h3></div>
-          <div class="pg3-content flexco">
-            <ul class="pg3-cardbox flex">
-              <button class="arrow-r left-arrow btn-bl disp" onclick="scrollCarousel(-1)">&#8592;</button>
-              <li class="pg3-cardlist">
+          <div class="pg3-content flexco swiper mySwiper">
+            <ul class="pg3-cardbox flex swiper-wrapper">
+              <li class="pg3-cardlist swiper-slide">
                   <div class="card-format2 flexco">
                     <img src="./images/desktop/index/photo5.png" alt="">
                     <time datetime="2024/10/21">2024/10/21</time>
@@ -125,7 +128,7 @@
                   </div>
                   
               </li>
-              <li class="pg3-cardlist disp">
+              <li class="pg3-cardlist swiper-slide">
                   <div class="card-format2 flexco">
                     <img src="./images/desktop/index/photo6.png" alt="">
                     <time datetime="2024/07/08">2024/07/08</time>
@@ -140,7 +143,7 @@
                     <a href="blog_detail.html#blog_post1" class="btn">閱讀內文</a>
                   </div> 
               </li>   
-              <li class="pg3-cardlist disp">
+              <li class="pg3-cardlist swiper-slide">
                   <div class="card-format2 flexco">
                     <img src="./images/desktop/index/photo7.png" alt="">
                     <time datetime="2024/09/03">2024/09/03</time>
@@ -154,12 +157,9 @@
                     <a href="blog_detail.html#blog_post1" class="btn">閱讀內文</a>
                   </div> 
               </li>
-              <button class="arrow-r right-arrow btn-bl disp" onclick="scrollCarousel(1)">&#8594;</button>  
             </ul>
-            <div class="arrow-box flex">
-              <button class="arrow-r left-arrow btn-bl" onclick="scrollCarousel(-1)">&#8592;</button>
-              <button class="arrow-r right-arrow btn-bl" onclick="scrollCarousel(1)">&#8594;</button>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </div> 
@@ -286,6 +286,25 @@
       </div>   
     </div> 
     <p class="copy_rights">© 2025 Alyse Wang. All rights reserved.</p>   
-
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+        },
+        800: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
   </body>
 </html>
